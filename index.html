@@ -240,6 +240,7 @@ section{padding:100px 0}
 /* sobre */
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
 .about-visual{position:relative;aspect-ratio:1/1.15;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(160deg,#EDE7DA,#DED6C5);box-shadow:var(--shadow)}
+.about-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 12%}
 .about-visual .slot-note{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);text-align:center;padding:30px}
 .about-visual .slot-note svg{width:38px;height:38px;opacity:.55}
 .about-visual .slot-note b{font-size:.82rem;font-weight:600;color:var(--graphite)}
@@ -249,7 +250,8 @@ section{padding:100px 0}
 .about-copy p{color:var(--graphite);margin-bottom:18px;max-width:56ch}
 .about-copy .confirm{margin-top:8px}
 .about-sign{display:flex;align-items:center;gap:16px;margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
-.about-sign .av{width:52px;height:52px;border-radius:50%;background:var(--bone-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);flex-shrink:0}
+.about-sign .av{width:52px;height:52px;border-radius:50%;background:var(--bone-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);flex-shrink:0;overflow:hidden}
+.about-sign .av img{width:100%;height:100%;object-fit:cover;object-position:center 8%}
 .about-sign .av svg{width:24px;height:24px}
 .about-sign b{font-size:.94rem;display:block}
 .about-sign span{font-size:.82rem;color:var(--muted)}
@@ -583,11 +585,7 @@ section{padding:100px 0}
   <section id="sobre">
     <div class="wrap about-grid">
       <div class="about-visual rv">
-        <div class="slot-note">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>
-          <b>Foto da equipe ou da fábrica</b>
-          <span>[ CONFIRMAR: imagem real ]</span>
-        </div>
+        <img src="marcos.jpg" alt="Marcos, fundador da Attimo Engenharia e Arquitetura">
       </div>
       <div class="about-copy rv">
         <span class="eyebrow" style="margin-bottom:20px">A Attimo</span>
@@ -596,7 +594,7 @@ section{padding:100px 0}
         <p>Engenharia e arquitetura sob o mesmo teto significam menos ruído entre quem desenha e quem constrói. O resultado é um imóvel entregue do jeito que foi pensado.</p>
         <p><span class="confirm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>CONFIRMAR: história completa da Attimo (Marcos vai contar)</span></p>
         <div class="about-sign">
-          <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></div>
+          <div class="av"><img src="marcos.jpg" alt="Marcos"></div>
           <div><b>Marcos</b><span>Fundador · Attimo Engenharia e Arquitetura</span></div>
         </div>
       </div>
